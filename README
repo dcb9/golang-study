@@ -50,3 +50,6 @@ switch
 
 除非以 fallthrough 语句结束，否则分支会自动终止。
 这个跟 PHP 是相反的，PHP 如果没有 break 会继续，  Go 有 fallthrough 才会继续，没有就会自动跳出。
+
+快速重新生成
+rebuild-golang-study='cd ~/projects/dcb9/golang-study ; docker  exec -it golangstudy_golangstudy_1 /bin/go-build  && docker-compose restart'
