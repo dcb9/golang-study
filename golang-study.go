@@ -15,7 +15,7 @@ func handle(w http.ResponseWriter, r *http.Request) {
 }
 
 func hello(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "<html><body>Hello, %s! 세상아 안녕!</body></html>", mux.Vars(r)["who"])
+	fmt.Fprintf(w, "<html><body>Hello, %s! </body></html>", mux.Vars(r)["who"])
 }
 
 func main() {
