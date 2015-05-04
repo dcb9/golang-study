@@ -1,0 +1,52 @@
+# golang study
+
+在线指南教程：
+http://tour.golangtc.com/welcome/1
+
+Golang中国：
+http://golangtc.com/
+
+
+多值返回
+函数可以返回任意数量的返回值。
+swap 函数返回了两个字符串。
+http://go-tour-zh.appspot.com/basics/6
+
+Docker 运行环境
+https://registry.hub.docker.com/u/google/golang-runtime/
+Notes
+
+The image assumes that your application:
+
+has a main package
+listens on port 8080
+may have a .godir file containing the import path for your application if it vendors its dependencies
+When building your application docker image, ONBUILD triggers fetch non-vendored dependencies of your application using go get.
+
+bool
+string
+int  int8  int16  int32  int64
+uint uint8 uint16 uint32 uint64 uintptr
+byte // uint8 的别名
+rune // int32 的别名
+     // 代表一个Unicode码
+float32 float64
+complex64 complex128
+
+零值
+变量在定义时没有明确的初始化时会赋值为_零值_。
+零值是：
+数值类型为 `0`，
+布尔类型为 `false`，
+字符串为 `""`（空字符串）。
+
+常量
+常量的定义与变量类似，只不过使用 const 关键字。
+常量可以是字符、字符串、布尔或数字类型的值。
+常量不能使用 := 语法定义。
+
+switch
+一个结构体（`struct`）就是一个字段的集合。
+
+除非以 fallthrough 语句结束，否则分支会自动终止。
+这个跟 PHP 是相反的，PHP 如果没有 break 会继续，  Go 有 fallthrough 才会继续，没有就会自动跳出。
